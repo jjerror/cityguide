@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/tab_bar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:src="@drawable/ic_bar"
+        tools:visibility="visible"
+        android:contentDescription="@string/icon_image_description"/>
+
+    <TextView
+        android:id="@+id/tab_bar_title"
+        style="@android:style/Widget.Holo.ActionBar.TabText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        tools:text="Activity"/>
+
+    <TextView
+        android:id="@+id/tab_bar_count"
+        style="@android:style/Widget.Holo.ActionBar.TabText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:text="2"
+        tools:visibility="visible"/>
+
+
+</LinearLayout>

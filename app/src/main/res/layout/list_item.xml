@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/list_item_vertical_padding"
+                android:paddingLeft="@dimen/list_item_horizontal_padding"
+                android:paddingRight="@dimen/list_item_horizontal_padding"
+                android:paddingTop="@dimen/list_item_vertical_padding">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/inner_vertical_space"
+        tools:src="@drawable/ic_bar"/>
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toLeftOf="@+id/distance"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textStyle="bold"
+        tools:text="Test"/>
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_toRightOf="@+id/icon"
+        android:src="@drawable/star_grey"/>
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_toRightOf="@+id/star1"
+        android:src="@drawable/star_grey"/>
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_toRightOf="@+id/star2"
+        android:src="@drawable/star_grey"/>
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_toRightOf="@+id/star3"
+        android:src="@drawable/star_grey"/>
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_toRightOf="@+id/star4"
+        android:src="@drawable/star_grey"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:minWidth="@dimen/list_item_distance_min_width"
+        android:textColor="@color/grey"
+        tools:text="100 miles"/>
+
+
+</RelativeLayout>
