@@ -1,6 +1,5 @@
 .gradle
 /local.properties
-/gradle.properties
 /.idea
 /build
 .DS_Store
